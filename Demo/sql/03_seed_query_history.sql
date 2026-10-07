@@ -1,5 +1,5 @@
 -- =============================================================================
--- 02_seed_query_history.sql
+-- 03_seed_query_history.sql
 -- Runs 25 realistic analyst queries to build query history patterns.
 -- Cortex Sense auto-ingests these to learn popular joins, filters, and patterns.
 -- RUN THIS BEFORE setting up Cortex Sense so the history is available at build time.

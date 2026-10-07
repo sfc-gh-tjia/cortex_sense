@@ -1,0 +1,210 @@
+{
+  "eval_questions": [
+    {
+      "id": "A1",
+      "tier": "A",
+      "tier_label": "SV Parity (both should answer)",
+      "source": "Semantic View",
+      "question": "How many purchase orders do we have?",
+      "expected": "25 purchase orders (COUNT DISTINCT EBELN from EKPO)",
+      "baseline_can_answer": true
+    },
+    {
+      "id": "A2",
+      "tier": "A",
+      "tier_label": "SV Parity",
+      "source": "Semantic View",
+      "question": "What is total procurement spend?",
+      "expected": "SUM(NETWR) from EKPO. Both agents should get the same number.",
+      "baseline_can_answer": true
+    },
+    {
+      "id": "A3",
+      "tier": "A",
+      "tier_label": "SV Parity",
+      "source": "Semantic View",
+      "question": "Which plant has the highest procurement spend?",
+      "expected": "EKPO JOIN T001W ON WERKS, GROUP BY plant NAME1, ORDER BY spend DESC.",
+      "baseline_can_answer": true
+    },
+    {
+      "id": "B1",
+      "tier": "B",
+      "tier_label": "Business Ontology (metric disambiguation)",
+      "source": "Business Ontology",
+      "question": "How many suppliers do we have?",
+      "expected": "14 (excludes 1 ZPRB probationary). NOT 15. Ontology formula: COUNT(DISTINCT LIFNR) WHERE KTOKK IN ('ZSTR','ZSTD').",
+      "baseline_can_answer": false,
+      "baseline_likely_error": "Returns 15 (includes probationary V10245)"
+    },
+    {
+      "id": "B2",
+      "tier": "B",
+      "tier_label": "Business Ontology (metric disambiguation)",
+      "source": "Business Ontology + Knowledge Base",
+      "question": "What is our Cost of Goods Sold?",
+      "expected": "$1,542,520 (invoices BSCHL=31 minus credit memos BSCHL=34). NOT $1,606,190 (sum without subtracting credits).",
+      "baseline_can_answer": false,
+      "baseline_likely_error": "May return $1,606,190 (ignoring credit memo subtraction) or wrong BSCHL filter"
+    },
+    {
+      "id": "B3",
+      "tier": "B",
+      "tier_label": "Business Ontology (metric disambiguation)",
+      "source": "Business Ontology + Knowledge Base",
+      "question": "What is our on-time delivery rate?",
+      "expected": "66.7% (operational: WADAT <= LFDAT from LIKP). NOT 90% (carrier OTRAT from LFA2).",
+      "baseline_can_answer": false,
+      "baseline_likely_error": "May return 90% from the OTRAT field in LFA2 (carrier self-reported)"
+    },
+    {
+      "id": "C1",
+      "tier": "C",
+      "tier_label": "Knowledge Base (policy & docs)",
+      "source": "Knowledge Base",
+      "question": "Can we give a 12% discount on this order?",
+      "expected": "Per procurement policy, discounts between 10.01-20% require VP Procurement approval within 48 hours, with written justification including competitive pricing evidence.",
+      "baseline_can_answer": false,
+      "baseline_likely_error": "Cannot answer — no access to policy documents"
+    },
+    {
+      "id": "C2",
+      "tier": "C",
+      "tier_label": "Knowledge Base (policy & docs)",
+      "source": "Knowledge Base",
+      "question": "What does BSCHL 31 mean in the accounting table?",
+      "expected": "BSCHL 31 = Vendor Invoice. Include in COGS as positive amount. From SAP Field Guide.",
+      "baseline_can_answer": false,
+      "baseline_likely_error": "May not know what BSCHL means — just sees it as a code column"
+    },
+    {
+      "id": "C3",
+      "tier": "C",
+      "tier_label": "Knowledge Base (policy & docs)",
+      "source": "Knowledge Base",
+      "question": "Which warehouses are above the rebalancing threshold?",
+      "expected": "Per WH SOP, warehouses above 90% utilization trigger a rebalancing alert. Check LKAPA in T320.",
+      "baseline_can_answer": false,
+      "baseline_likely_error": "Can query T320.LKAPA but doesn't know the 90% threshold is significant"
+    },
+    {
+      "id": "D1",
+      "tier": "D",
+      "tier_label": "Query History (learned patterns)",
+      "source": "Query History",
+      "question": "Show me procurement spend by vendor.",
+      "expected": "Should auto-apply KTOKK != 'ZPRB' filter (learned from analyst query history). Result excludes probationary vendors.",
+      "baseline_can_answer": true,
+      "baseline_likely_error": "May include probationary vendor V10245 in the spend breakdown"
+    },
+    {
+      "id": "D2",
+      "tier": "D",
+      "tier_label": "Query History (learned patterns)",
+      "source": "Query History",
+      "question": "What is the credit memo ratio by vendor?",
+      "expected": "Should use the BSCHL=31 vs BSCHL=34 separation pattern learned from query history.",
+      "baseline_can_answer": false,
+      "baseline_likely_error": "May not know to separate by posting key"
+    },
+    {
+      "id": "E1",
+      "tier": "E",
+      "tier_label": "Long-Tail Tables (not in SV)",
+      "source": "Long-Tail Table: DNB_RISK_ASSESSMENTS",
+      "question": "What is the geopolitical risk score for our Chinese suppliers?",
+      "expected": "From DNB_RISK_ASSESSMENTS: Shenzhen Electronics (CN) geopolitical=6, Guangzhou Rare Earth (CN) geopolitical=5, Jiangsu Copper (CN) geopolitical=5.",
+      "baseline_can_answer": false,
+      "baseline_likely_error": "Cannot answer — DNB_RISK_ASSESSMENTS is not in the Semantic View"
+    },
+    {
+      "id": "E2",
+      "tier": "E",
+      "tier_label": "Long-Tail Tables (not in SV)",
+      "source": "Long-Tail Table: INCIDENT_LOG",
+      "question": "How many critical quality incidents did we have this year?",
+      "expected": "From INCIDENT_LOG: count where SEVERITY='CRITICAL'. Should be 4 (INC-001, INC-006, INC-012, INC-018). Column is CATEGORY (not INCIDENT_TYPE).",
+      "baseline_can_answer": false,
+      "baseline_likely_error": "Cannot answer — INCIDENT_LOG is not in the Semantic View"
+    },
+    {
+      "id": "E3",
+      "tier": "E",
+      "tier_label": "Long-Tail Tables (not in SV)",
+      "source": "Long-Tail Table: DEMAND_FORECAST",
+      "question": "Which materials had the biggest forecast miss in December?",
+      "expected": "From DEMAND_FORECAST WHERE FORECAST_MONTH='2025-12-01': MAT-008 Microcontroller (+27.3%), MAT-013 Rare Earth Sensors (+27.3%), MAT-004 MEMS Accelerometer (+22.2%).",
+      "baseline_can_answer": false,
+      "baseline_likely_error": "Cannot answer — DEMAND_FORECAST is not in the Semantic View"
+    },
+    {
+      "id": "X1",
+      "tier": "X",
+      "tier_label": "Cross-Source (money shot)",
+      "source": "SV + DNB + Ariba + Scorecards + Ontology",
+      "question": "Give me the full risk profile for Shenzhen Electronics.",
+      "expected": "Combines: SAP (V10045, ZSTR, PO spend), DNB (risk score 6, geopolitical risk 6, trade tension factors), Ariba (ARIBA-SP-2001, Compliant, cert expires 2026-09-15), Scorecards (Excellent rating, 4.5 delivery, monitor trade policy). Entity resolution: V10045 = Shenzhen Electronics = ARIBA-SP-2001.",
+      "baseline_can_answer": false,
+      "baseline_likely_error": "Can only see V10045 in SAP tables. No access to DNB risk, Ariba compliance, or scorecard reviews."
+    },
+    {
+      "id": "X2",
+      "tier": "X",
+      "tier_label": "Cross-Source (money shot)",
+      "source": "SV + Categories + DNB + Knowledge Base",
+      "question": "Which critical materials have single-source suppliers in high-risk countries?",
+      "expected": "Requires: material category hierarchy (MATERIAL_CATEGORIES), supplier-material links (EKPO), country (LFA1), risk scores (DNB), sole-source policy (knowledge base). Cross-references 4 sources.",
+      "baseline_can_answer": false,
+      "baseline_likely_error": "Cannot access material categories, DNB risk, or the policy definition of 'critical'"
+    },
+    {
+      "id": "X3",
+      "tier": "X",
+      "tier_label": "Cross-Source (money shot)",
+      "source": "SV + Scorecards + Incidents + Docs + Forecast",
+      "question": "What should we prioritize for next quarter's supplier review?",
+      "expected": "Combines: recent incidents (INCIDENT_LOG), past reviews (SUPPLIER_SCORECARDS), re-qualification schedule (knowledge base docs), demand changes (DEMAND_FORECAST), current spend (EKPO). Should flag: V10167 Guangzhou (3 quality incidents), V10245 Puebla (probationary, 3 strikes), V10089 lead time creep.",
+      "baseline_can_answer": false,
+      "baseline_likely_error": "No visibility into scorecards, incidents, forecast, or the review schedule"
+    },
+    {
+      "id": "F1",
+      "tier": "F",
+      "tier_label": "Dashboard Logic (unique to Streamlit)",
+      "source": "Streamlit Dashboard: SUPPLY_CHAIN_DASHBOARD",
+      "question": "What is the Supplier Health Index for Shenzhen Electronics?",
+      "expected": "Supplier Health Index formula (from dashboard code): 0.35*delivery + 0.30*quality + 0.20*responsiveness + 0.15*(10-risk). Shenzhen has delivery ~4.5, quality ~4.5, responsiveness ~4.3, DNB risk 6. SHI = 0.35*4.5 + 0.30*4.5 + 0.20*4.3 + 0.15*(10-6) = 1.575 + 1.35 + 0.86 + 0.6 = 4.39. Status: Critical (< 5.0).",
+      "baseline_can_answer": false,
+      "baseline_likely_error": "Supplier Health Index formula does not exist in the SV, stage file, or any table — only in the dashboard source code"
+    },
+    {
+      "id": "F2",
+      "tier": "F",
+      "tier_label": "Dashboard Logic (unique to Streamlit)",
+      "source": "Streamlit Dashboard: SUPPLY_CHAIN_DASHBOARD",
+      "question": "Which warehouses are in the red zone?",
+      "expected": "Red zone = utilization >= 95% (from dashboard code). Check T320.LKAPA. Nagoya JIT Storage (WH-007) at 91.7% is ORANGE (90-95%), no warehouses currently >= 95%. Closest to red: WH-007 at 91.7%.",
+      "baseline_can_answer": false,
+      "baseline_likely_error": "Can query T320.LKAPA but has no concept of 'red zone' — the 95% threshold only exists in the dashboard code"
+    },
+    {
+      "id": "F3",
+      "tier": "F",
+      "tier_label": "Dashboard Logic (unique to Streamlit)",
+      "source": "Streamlit Dashboard: SUPPLY_CHAIN_DASHBOARD",
+      "question": "What is our procurement concentration risk?",
+      "expected": "Concentration Risk formula (from dashboard code): top 3 suppliers as % of total qualified spend. Top 3: Guangzhou ($177.5K), Tokyo Sensor ($162K), Pacific Metals ($156.2K) = $495.7K out of ~$1.33M total = 37.3%. Level: LOW (< 40%). Thresholds: HIGH > 60%, MEDIUM 40-60%, LOW < 40%.",
+      "baseline_can_answer": false,
+      "baseline_likely_error": "Can compute spend by vendor but has no concept of concentration risk thresholds — the formula and thresholds only exist in the dashboard code"
+    }
+  ],
+  "tier_summary": {
+    "A": {"label": "SV Parity", "count": 3, "baseline_expected": "3/3", "sense_expected": "3/3"},
+    "B": {"label": "Business Knowledge", "count": 3, "baseline_expected": "0/3", "sense_expected": "3/3"},
+    "C": {"label": "Knowledge Base", "count": 3, "baseline_expected": "0/3", "sense_expected": "3/3"},
+    "D": {"label": "Query History", "count": 2, "baseline_expected": "0-1/2", "sense_expected": "2/2"},
+    "E": {"label": "Long-Tail Tables", "count": 3, "baseline_expected": "0/3", "sense_expected": "3/3"},
+    "F": {"label": "Dashboard Logic", "count": 3, "baseline_expected": "0/3", "sense_expected": "3/3"},
+    "X": {"label": "Cross-Source", "count": 3, "baseline_expected": "0/3", "sense_expected": "3/3"}
+  }
+}

@@ -1,0 +1,100 @@
+# Cortex Sense Value Demonstration — 10-Question Eval v2
+# Each question targets a DISTINCT Sense capability the baseline SV-only agent cannot replicate.
+# Grading: 0 = wrong/no answer, 1 = partial (right direction, wrong number), 2 = correct + sourced
+
+eval_name: cortex_sense_value_demo_v2
+agents:
+  sense: DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.SAP_SUPPLY_CHAIN_AGENT
+  baseline: DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.BASELINE_SUPPLY_CHAIN_AGENT
+
+questions:
+
+  - id: V1
+    sense_value: external_table_ariba
+    question: "What is the total annual procurement spend across all suppliers in Ariba?"
+    expected_answer: "$30,100,000 across 10 Ariba suppliers"
+    expected_table: DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.ARIBA_SUPPLIERS
+    baseline_prediction: "FAIL — will attempt SUM(EKPO.NETWR) or SUM(BSEG.DMBTR), which are transactional postings, not contracted spend. Will return a different (wrong) number."
+    sense_capability: "Feedback correction steers agent to ARIBA_SUPPLIERS.ANNUAL_SPEND_USD as system-of-record for spend analytics."
+
+  - id: V2
+    sense_value: external_table_dnb
+    question: "Which suppliers have a geopolitical risk score above 5 according to D&B?"
+    expected_answer: "2 suppliers: Guangzhou Rare Earth (7) and Shenzhen Electronics (6), Jiangsu Copper Alloys (6)"
+    expected_table: DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.DNB_RISK_ASSESSMENTS
+    baseline_prediction: "FAIL — no access to DNB data. Will either say it can't answer or hallucinate from SAP data."
+    sense_capability: "Feedback correction routes to DNB_RISK_ASSESSMENTS for risk-related questions."
+
+  - id: V3
+    sense_value: internal_table_not_in_sv
+    question: "Which supplier received a 'Poor' overall rating in Q4 2025?"
+    expected_answer: "Puebla Corrugated Products SA (V10245) — Delivery 2.0, Quality 1.5, Responsiveness 2.5"
+    expected_table: DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.SUPPLIER_SCORECARDS
+    baseline_prediction: "FAIL — SUPPLIER_SCORECARDS is not in the semantic view. Baseline has no performance rating data."
+    sense_capability: "Feedback correction routes to SUPPLIER_SCORECARDS for performance review questions."
+
+  - id: V4
+    sense_value: ontology_metric_formula
+    question: "How many active suppliers do we have in SAP, excluding probationary vendors?"
+    expected_answer: "14 (COUNT DISTINCT LIFNR FROM LFA1 WHERE KTOKK IN ('ZSTR','ZSTD'), excludes 1 ZPRB vendor)"
+    expected_table: DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.LFA1
+    baseline_prediction: "PARTIAL — baseline can query LFA1 but will likely return 15 (all vendors) because it doesn't know about the KTOKK exclusion rule. The ontology defines Canonical Supplier Count as excluding ZPRB."
+    sense_capability: "Ontology-defined metric formula specifies KTOKK IN ('ZSTR','ZSTD'). Knowledge doc reinforces: ZPRB = probationary, excluded from active supply base."
+
+  - id: V5
+    sense_value: knowledge_doc_metric
+    question: "What is our Cost of Goods Sold?"
+    expected_answer: "$1,542,520 (SUM DMBTR WHERE BSCHL='31' minus SUM DMBTR WHERE BSCHL='34' from BSEG)"
+    expected_table: DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.BSEG
+    baseline_prediction: "PARTIAL — baseline can query BSEG but will likely use naive SUM(DMBTR) = $1,669,860 without separating posting keys 31 (invoices) vs 34 (credit memos). Or might attempt SUM of all BSCHL types."
+    sense_capability: "Knowledge doc defines COGS formula with posting key logic. Ontology warns that naive SUM overstates to ~$1,606,190."
+
+  - id: V6
+    sense_value: knowledge_doc_business_rule
+    question: "What happens to a supplier that scores below C for three consecutive quarters?"
+    expected_answer: "Three-Strike Rule: automatic probation (KTOKK changed to ZPRB). Restricted to existing POs only, no new contracts. Recovery requires 2 consecutive B+ ratings to return to ZSTD."
+    expected_table: null
+    baseline_prediction: "FAIL — this is a business policy question. Baseline has no access to procurement policies. Will either hallucinate or say it can't answer."
+    sense_capability: "Knowledge doc Section 4 (Procurement Policies) contains the Three-Strike Rule. Only accessible via Cortex Sense stage file ingestion."
+
+  - id: V7
+    sense_value: cross_domain_2_source
+    question: "What is the combined annual Ariba spend on suppliers flagged as high-risk by D&B (overall risk score >= 5)?"
+    expected_answer: "Need to join ARIBA_SUPPLIERS + DNB_RISK_ASSESSMENTS on SUPPLIER_NAME. High-risk suppliers in Ariba: Shenzhen Electronics ($4.25M), Guangzhou Rare Earth (if in Ariba), Jiangsu Copper Alloys (if in Ariba), Puebla Corrugated (if in Ariba)."
+    expected_table: DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.ARIBA_SUPPLIERS + DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.DNB_RISK_ASSESSMENTS
+    baseline_prediction: "FAIL — cannot access either table. Even if it tried, it has no join context between the two systems."
+    sense_capability: "Sense routes to both tables via feedback corrections AND provides join guidance (SUPPLIER_NAME text match between systems)."
+
+  - id: V8
+    sense_value: cross_domain_3_source_profile
+    question: "Give me a risk profile for Guangzhou Rare Earth — include their D&B risk scores, latest scorecard ratings, and Ariba spend if available."
+    expected_answer: "D&B: overall 7, financial 5, geopolitical 7, weather 5 (highest risk supplier). Scorecard Q4 2025: Delivery 3.0, Quality 2.5, Responsiveness 3.2, rated 'Acceptable'. Ariba spend: check if present."
+    expected_table: DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.DNB_RISK_ASSESSMENTS + DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.SUPPLIER_SCORECARDS + DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.ARIBA_SUPPLIERS
+    baseline_prediction: "FAIL — can at most return LFA1 master data (name, city, country). No risk, scorecard, or Ariba spend data accessible."
+    sense_capability: "Sense synthesizes across 3+ sources (DNB + Scorecards + Ariba + LFA1) to build a complete supplier profile. This is the 'single pane of glass' value prop."
+
+  - id: V9
+    sense_value: knowledge_doc_correct_source
+    question: "What is the actual on-time delivery rate for our shipments?"
+    expected_answer: "66.7% — calculated from LIKP as COUNT(WADAT <= LFDAT) / COUNT(*) WHERE STATU = 'D'. Do NOT use LFA2.OTRAT which is carrier self-reported (~90%)."
+    expected_table: DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.LIKP
+    baseline_prediction: "WRONG SOURCE — baseline will likely use LFA2.OTRAT (carrier self-reported rate, ~90%) which is in the semantic view. This is a common and misleading error."
+    sense_capability: "Knowledge doc explicitly warns: 'Do NOT use LFA2.OTRAT (carrier self-reported, shows ~90%). Use operational definition from LIKP actual vs promised dates.' Sense steers to the correct calculation."
+
+  - id: V10
+    sense_value: knowledge_doc_sap_codes
+    question: "What do the vendor account group codes ZSTR, ZSTD, and ZPRB mean, and what payment terms apply to each?"
+    expected_answer: "ZSTR = Strategic partner (Net 60, eligible for dynamic discounting). ZSTD = Standard vendor (Net 30). ZPRB = Probationary (Prepay or Net 15 only)."
+    expected_table: null
+    baseline_prediction: "FAIL — baseline has no SAP field code reference or payment terms policy. Will either hallucinate meanings or say it can't answer."
+    sense_capability: "Knowledge doc Section 3 (SAP Field Code Reference) + Section 4 (Payment Terms Policy) provide exact definitions. This is institutional knowledge that only lives in documentation."
+
+# Scoring expectations:
+#   Baseline:  V1=0, V2=0, V3=0, V4=1, V5=1, V6=0, V7=0, V8=0, V9=1, V10=0 → 3/20 (15%)
+#   Sense:     V1=2, V2=2, V3=2, V4=2, V5=2, V6=2, V7=2, V8=2, V9=2, V10=2 → 20/20 (100%)
+#
+# Sense advantage by capability:
+#   - External tables (V1, V2, V3):      3 questions, baseline scores 0/6
+#   - Ontology formulas (V4):            1 question,  baseline scores 1/2 (partial)
+#   - Knowledge doc (V5, V6, V9, V10):   4 questions, baseline scores 1-2/8 (V5/V9 partial)
+#   - Cross-domain synthesis (V7, V8):    2 questions, baseline scores 0/4

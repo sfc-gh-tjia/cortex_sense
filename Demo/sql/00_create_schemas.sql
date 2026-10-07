@@ -1,0 +1,25 @@
+-- =============================================================================
+-- 00_create_schemas.sql
+-- Creates the database, schemas, warehouses, and stages needed for the demo.
+-- =============================================================================
+
+CREATE DATABASE IF NOT EXISTS DB_ONTOLOGY_CONTROL_PLANE;
+
+CREATE SCHEMA IF NOT EXISTS DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION;
+CREATE SCHEMA IF NOT EXISTS DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES;
+
+CREATE WAREHOUSE IF NOT EXISTS ONTOLOGY_WH
+  WAREHOUSE_SIZE = 'XSMALL'
+  AUTO_SUSPEND = 60
+  AUTO_RESUME = TRUE;
+
+CREATE WAREHOUSE IF NOT EXISTS COMPUTE_WH
+  WAREHOUSE_SIZE = 'XSMALL'
+  AUTO_SUSPEND = 60
+  AUTO_RESUME = TRUE;
+
+-- Stage for knowledge docs
+CREATE STAGE IF NOT EXISTS DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.SENSE_SOURCES;
+
+-- Stage for Streamlit app
+CREATE STAGE IF NOT EXISTS DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.STREAMLIT_STAGE;

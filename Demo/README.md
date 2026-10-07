@@ -142,6 +142,10 @@ connection_name="my_connection"  # Update to match your connections.toml
 
 Also update the Streamlit URL in `web/components/context/ContextView.tsx` line 5 — replace `<org>/<account>` with your Snowsight org/account path.
 
+---
+
+## Repo Structure
+
 ```
 Demo/
 ├── sql/                              # Numbered SQL scripts (run 00-08 in order)
@@ -154,7 +158,6 @@ Demo/
 │   ├── 06_upload_stage_file.sql      # Knowledge doc to stage
 │   ├── 07_create_agents.sql          # Baseline + Sense agents
 │   └── 08_test_queries.sql           # Validation
-├── docs/                             # Business knowledge documents
 ├── stage_files/                      # Knowledge doc uploaded to @SENSE_SOURCES
 ├── streamlit/                        # Dashboard source code
 ├── eval/                             # Eval definitions and results

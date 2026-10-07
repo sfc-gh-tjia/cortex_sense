@@ -714,7 +714,7 @@ CREATE OR REPLACE TABLE SIMULATION_LOG (
 
 INSERT INTO SIMULATION_LOG (SIMULATION_ID, BRANCH_SCHEMA, LABEL, DESCRIPTION, CREATED_BY, CREATED_AT, STATUS, ACTIONS_APPLIED, COMPARISON_METRICS, PROMOTED_AT, DROPPED_AT)
 VALUES
-  ('SIM_20260924_6CCE', 'SIM_20260924_6CCE', 'Reroute SHP-017 to Monterrey Cross-Dock Facility', 'Simulation branch with 1 actions applied', 'TJIA', '2026-09-24 15:47:11.566000', 'DROPPED', '[
+  ('SIM_20260924_6CCE', 'SIM_20260924_6CCE', 'Reroute SHP-017 to Monterrey Cross-Dock Facility', 'Simulation branch with 1 actions applied', 'DEMO_USER', '2026-09-24 15:47:11.566000', 'DROPPED', '[
   {
     "actionTypeId": "REROUTE_SHIPMENT",
     "parameters": {
@@ -739,7 +739,7 @@ VALUES
     "WH-008": 67.4
   }
 }', NULL, '2026-09-30 11:50:44.273000'),
-  ('SIM_20260924_8850', 'SIM_20260924_8850', 'Reroute SHP-017 to Shanghai Bonded Warehouse', 'Simulation branch with 1 actions applied', 'TJIA', '2026-09-24 15:47:31.300000', 'DROPPED', '[
+  ('SIM_20260924_8850', 'SIM_20260924_8850', 'Reroute SHP-017 to Shanghai Bonded Warehouse', 'Simulation branch with 1 actions applied', 'DEMO_USER', '2026-09-24 15:47:31.300000', 'DROPPED', '[
   {
     "actionTypeId": "REROUTE_SHIPMENT",
     "parameters": {
@@ -764,7 +764,7 @@ VALUES
     "WH-008": 67.4
   }
 }', NULL, '2026-09-30 11:50:43.392000'),
-  ('SIM_20260924_94DE', 'SIM_20260924_94DE', 'Reroute SHP-017 to Monterrey Cross-Dock Facility', 'Simulation branch with 1 actions applied', 'TJIA', '2026-09-24 16:13:43.575000', 'DROPPED', '[
+  ('SIM_20260924_94DE', 'SIM_20260924_94DE', 'Reroute SHP-017 to Monterrey Cross-Dock Facility', 'Simulation branch with 1 actions applied', 'DEMO_USER', '2026-09-24 16:13:43.575000', 'DROPPED', '[
   {
     "actionTypeId": "REROUTE_SHIPMENT",
     "parameters": {
@@ -789,7 +789,7 @@ VALUES
     "WH-008": 67.4
   }
 }', NULL, '2026-09-30 11:50:42.238000'),
-  ('SIM_20260924_D055', 'SIM_20260924_D055', 'Reroute SHP-017 to Shanghai Bonded Warehouse', 'Simulation branch with 1 actions applied', 'TJIA', '2026-09-24 16:14:01.752000', 'ACTIVE', '[
+  ('SIM_20260924_D055', 'SIM_20260924_D055', 'Reroute SHP-017 to Shanghai Bonded Warehouse', 'Simulation branch with 1 actions applied', 'DEMO_USER', '2026-09-24 16:14:01.752000', 'ACTIVE', '[
   {
     "actionTypeId": "REROUTE_SHIPMENT",
     "parameters": {
@@ -814,7 +814,7 @@ VALUES
     "WH-008": 67.4
   }
 }', NULL, NULL),
-  ('SIM_20260924_FE71', 'SIM_20260924_FE71', 'Reroute SHP-018 via Austin Finished Goods Depot', 'Simulation branch with 1 actions applied', 'TJIA', '2026-09-24 16:22:50.848000', 'ACTIVE', '[
+  ('SIM_20260924_FE71', 'SIM_20260924_FE71', 'Reroute SHP-018 via Austin Finished Goods Depot', 'Simulation branch with 1 actions applied', 'DEMO_USER', '2026-09-24 16:22:50.848000', 'ACTIVE', '[
   {
     "actionTypeId": "REROUTE_SHIPMENT",
     "parameters": {
@@ -839,7 +839,7 @@ VALUES
     "WH-008": 67.4
   }
 }', NULL, NULL),
-  ('SIM_20260924_A78E', 'SIM_20260924_A78E', 'Reroute SHP-018 via Shanghai Bonded Warehouse', 'Simulation branch with 1 actions applied', 'TJIA', '2026-09-24 16:23:10.146000', 'ACTIVE', '[
+  ('SIM_20260924_A78E', 'SIM_20260924_A78E', 'Reroute SHP-018 via Shanghai Bonded Warehouse', 'Simulation branch with 1 actions applied', 'DEMO_USER', '2026-09-24 16:23:10.146000', 'ACTIVE', '[
   {
     "actionTypeId": "REROUTE_SHIPMENT",
     "parameters": {
@@ -864,7 +864,7 @@ VALUES
     "WH-008": 67.4
   }
 }', NULL, NULL),
-  ('SIM_20260930_4C8E', 'SIM_20260930_4C8E', 'Reroute SHP-017 to Monterrey Cross-Dock Facility', 'Simulation branch with 1 actions applied', 'TJIA', '2026-09-30 11:50:06.503000', 'ACTIVE', '[
+  ('SIM_20260930_4C8E', 'SIM_20260930_4C8E', 'Reroute SHP-017 to Monterrey Cross-Dock Facility', 'Simulation branch with 1 actions applied', 'DEMO_USER', '2026-09-30 11:50:06.503000', 'ACTIVE', '[
   {
     "actionTypeId": "REROUTE_SHIPMENT",
     "parameters": {
@@ -889,7 +889,7 @@ VALUES
     "WH-008": 67.4
   }
 }', NULL, NULL),
-  ('SIM_20260930_5FE9', 'SIM_20260930_5FE9', 'Reroute SHP-017 to Shanghai Bonded Warehouse', 'Simulation branch with 1 actions applied', 'TJIA', '2026-09-30 11:50:26.403000', 'ACTIVE', '[
+  ('SIM_20260930_5FE9', 'SIM_20260930_5FE9', 'Reroute SHP-017 to Shanghai Bonded Warehouse', 'Simulation branch with 1 actions applied', 'DEMO_USER', '2026-09-30 11:50:26.403000', 'ACTIVE', '[
   {
     "actionTypeId": "REROUTE_SHIPMENT",
     "parameters": {
@@ -914,7 +914,7 @@ VALUES
     "WH-008": 67.4
   }
 }', NULL, NULL),
-  ('SIM_20260930_D462', 'SIM_20260930_D462', 'Reroute Shipment: SHP-018, WH-002', 'Simulation branch with 1 actions applied', 'TJIA', '2026-09-30 11:50:40.296000', 'ACTIVE', '[
+  ('SIM_20260930_D462', 'SIM_20260930_D462', 'Reroute Shipment: SHP-018, WH-002', 'Simulation branch with 1 actions applied', 'DEMO_USER', '2026-09-30 11:50:40.296000', 'ACTIVE', '[
   {
     "actionTypeId": "REROUTE_SHIPMENT",
     "parameters": {
@@ -939,7 +939,7 @@ VALUES
     "WH-008": 67.4
   }
 }', NULL, NULL),
-  ('SIM_20260930_F75D', 'SIM_20260930_F75D', 'Reroute SHP-018 via Austin Finished Goods Depot', 'Simulation branch with 1 actions applied', 'TJIA', '2026-09-30 11:52:29.253000', 'DROPPED', '[
+  ('SIM_20260930_F75D', 'SIM_20260930_F75D', 'Reroute SHP-018 via Austin Finished Goods Depot', 'Simulation branch with 1 actions applied', 'DEMO_USER', '2026-09-30 11:52:29.253000', 'DROPPED', '[
   {
     "actionTypeId": "REROUTE_SHIPMENT",
     "parameters": {
@@ -964,7 +964,7 @@ VALUES
     "WH-008": 67.4
   }
 }', NULL, '2026-09-30 12:06:41.050000'),
-  ('SIM_20260930_F330', 'SIM_20260930_F330', 'Reroute SHP-018 via Shanghai Bonded Warehouse', 'Simulation branch with 1 actions applied', 'TJIA', '2026-09-30 11:52:49.484000', 'DROPPED', '[
+  ('SIM_20260930_F330', 'SIM_20260930_F330', 'Reroute SHP-018 via Shanghai Bonded Warehouse', 'Simulation branch with 1 actions applied', 'DEMO_USER', '2026-09-30 11:52:49.484000', 'DROPPED', '[
   {
     "actionTypeId": "REROUTE_SHIPMENT",
     "parameters": {

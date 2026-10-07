@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
-const STREAMLIT_URL = "https://app.snowflake.com/sfsenorthamerica/tjia_aws_usw2/#/streamlit-apps/DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.SUPPLY_CHAIN_DASHBOARD";
+const STREAMLIT_URL = "https://app.snowflake.com/<org>/<account>/#/streamlit-apps/DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.SUPPLY_CHAIN_DASHBOARD";
 
 interface FileInfo {
   key: string;

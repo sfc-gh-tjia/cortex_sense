@@ -37,7 +37,7 @@ SENSE_AGENT = "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.SAP_SUPPLY_CHAIN_AGENT"
 
 def get_connection():
     return snowflake.connector.connect(
-        connection_name="tjia_demo_aws2",
+        connection_name="my_connection",  # Update to match your connections.toml
         database="DB_ONTOLOGY_CONTROL_PLANE",
         schema="SAP_PRODUCTION",
     )

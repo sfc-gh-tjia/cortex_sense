@@ -137,7 +137,7 @@ npm run dev -- -p 3000
 
 **Important**: Update the connection name in `web/api_server.py` line 40:
 ```python
-connection_name="tjia_demo_aws2"  # Change to your connection name
+connection_name="my_connection"  # Update to match your connections.toml
 ```
 
 ---

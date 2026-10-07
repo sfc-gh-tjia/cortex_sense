@@ -24,11 +24,7 @@ DEMO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 ALLOWED_FILES = {
     "knowledge_doc": "stage_files/sap_supply_chain_knowledge.md",
     "eval_report": "eval_v2_final_report.md",
-    "setup_reference": "setup_reference.md",
     "dashboard_source": "streamlit/supply_chain_dashboard.py",
-    "sap_field_guide": "docs/sap_field_guide.md",
-    "metric_definitions": "docs/metric_definitions.md",
-    "procurement_policy": "docs/procurement_policy.md",
 }
 
 BASELINE_AGENT = "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.BASELINE_SUPPLY_CHAIN_AGENT"

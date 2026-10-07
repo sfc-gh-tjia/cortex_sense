@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
-const STREAMLIT_URL = "https://app.snowflake.com/<org>/<account>/#/streamlit-apps/DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.SUPPLY_CHAIN_DASHBOARD";
+const STREAMLIT_URL = "https://app.snowflake.com/sfsenorthamerica/tjia_aws_usw2/#/streamlit-apps/DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.SUPPLY_CHAIN_DASHBOARD";
 
 interface FileInfo {
   key: string;
@@ -12,13 +12,9 @@ interface FileInfo {
 }
 
 const DEMO_FILES: FileInfo[] = [
-  { key: "knowledge_doc", label: "Knowledge Doc", description: "sap_supply_chain_knowledge.md — metric formulas, SAP codes, policies" },
-  { key: "dashboard_source", label: "Dashboard Source", description: "supply_chain_dashboard.py — Streamlit app with Supplier Health Index" },
-  { key: "eval_report", label: "Eval Report", description: "eval_v2_final_report.md — full 10-question analysis (20 vs 4)" },
-  { key: "setup_reference", label: "Setup Reference", description: "setup_reference.md — complete DDL, manifest, and config" },
-  { key: "sap_field_guide", label: "SAP Field Guide", description: "SAP field code definitions and business meanings" },
-  { key: "metric_definitions", label: "Metric Definitions", description: "Formulas for COGS, OTD, Supplier Health Index" },
-  { key: "procurement_policy", label: "Procurement Policy", description: "Three-Strike Rule, qualification process" },
+  { key: "knowledge_doc", label: "Knowledge Doc (indexed by Sense)", description: "sap_supply_chain_knowledge.md — metric formulas, SAP codes, policies" },
+  { key: "dashboard_source", label: "Dashboard Source (indexed by Sense)", description: "supply_chain_dashboard.py — Streamlit app with Supplier Health Index" },
+  { key: "eval_report", label: "Eval Report", description: "eval_v2_final_report.md — full 10-question analysis (10 vs 2)" },
 ];
 
 function FileViewer({ fileKey, onClose }: { fileKey: string; onClose: () => void }) {

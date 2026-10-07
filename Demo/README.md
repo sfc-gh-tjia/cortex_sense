@@ -140,9 +140,7 @@ npm run dev -- -p 3000
 connection_name="my_connection"  # Update to match your connections.toml
 ```
 
----
-
-## Repo Structure
+Also update the Streamlit URL in `web/components/context/ContextView.tsx` line 5 — replace `<org>/<account>` with your Snowsight org/account path.
 
 ```
 Demo/
@@ -156,7 +154,6 @@ Demo/
 │   ├── 06_upload_stage_file.sql      # Knowledge doc to stage
 │   ├── 07_create_agents.sql          # Baseline + Sense agents
 │   └── 08_test_queries.sql           # Validation
-├── DEMO_SCRIPT.md                    # 15-minute demo walkthrough
 ├── docs/                             # Business knowledge documents
 ├── stage_files/                      # Knowledge doc uploaded to @SENSE_SOURCES
 ├── streamlit/                        # Dashboard source code
@@ -167,5 +164,3 @@ Demo/
     ├── package.json                  # Node.js dependencies
     └── app/components/lib/           # Next.js frontend (port 3000)
 ```
-
-See [DEMO_SCRIPT.md](DEMO_SCRIPT.md) for the 15-minute demo walkthrough.

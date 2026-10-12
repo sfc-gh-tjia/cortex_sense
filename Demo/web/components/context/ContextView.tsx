@@ -12,9 +12,9 @@ interface FileInfo {
 }
 
 const DEMO_FILES: FileInfo[] = [
-  { key: "knowledge_doc", label: "Knowledge Doc (indexed by Sense)", description: "sap_supply_chain_knowledge.md — metric formulas, SAP codes, policies" },
-  { key: "dashboard_source", label: "Dashboard Source (indexed by Sense)", description: "supply_chain_dashboard.py — Streamlit app with Supplier Health Index" },
-  { key: "eval_report", label: "Eval Report", description: "eval_v2_final_report.md — full 10-question analysis (10 vs 2)" },
+  { key: "knowledge_doc", label: "Knowledge Doc", description: "sap_supply_chain_knowledge.md — indexed by Sense via stage_files source" },
+  { key: "dashboard_source", label: "Dashboard Source", description: "supply_chain_dashboard.py — indexed by Sense via streamlit_apps source" },
+  { key: "eval_report", label: "Eval Report", description: "eval_v2_final_report.md — 10-question analysis (not indexed by Sense)" },
 ];
 
 function FileViewer({ fileKey, onClose }: { fileKey: string; onClose: () => void }) {

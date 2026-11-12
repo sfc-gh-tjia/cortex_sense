@@ -33,7 +33,7 @@ SENSE_AGENT = "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.SAP_SUPPLY_CHAIN_AGENT"
 
 def get_connection():
     return snowflake.connector.connect(
-        connection_name="my_connection",  # Update to match your connections.toml
+        connection_name=os.environ.get("SNOWFLAKE_CONNECTION_NAME", "default"),
         database="DB_ONTOLOGY_CONTROL_PLANE",
         schema="SAP_PRODUCTION",
     )
@@ -212,5 +212,6 @@ def get_file(key):
 
 
 if __name__ == "__main__":
-    print("Starting Cortex Sense eval API on http://localhost:5001")
-    app.run(port=5001, debug=False)
+    port = int(os.environ.get("API_PORT", "5002"))
+    print(f"Starting Cortex Sense eval API on http://localhost:{port}")
+    app.run(port=port, debug=False)

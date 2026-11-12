@@ -60,7 +60,7 @@ export default function ComparisonView() {
     setSense(null);
     setCurrentQ({ q: question, id: qId, expected, source, baselineCanAnswer, baselineError });
     try {
-      const res = await fetch("http://localhost:5001/api/agent", {
+      const res = await fetch("/api/agent", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question }),

@@ -1,0 +1,1406 @@
+{
+  "hot_tables": [
+    {
+      "fqn": "DB_DISNEY_DEMO.DEMO.PARK_VISITS",
+      "domain": "Table",
+      "access_count": 843,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_DISNEY_DEMO.DEMO.VIEWING_HISTORY",
+      "domain": "Table",
+      "access_count": 843,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_DEMO_PEACOCK.DEMO.CONTENT_CATALOG",
+      "domain": "Table",
+      "access_count": 843,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_DISNEY_DEMO.DEMO.VIEWERS",
+      "domain": "Table",
+      "access_count": 843,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_DEMO_PEACOCK.DEMO.CDN_SESSIONS",
+      "domain": "Table",
+      "access_count": 843,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_DEMO_PEACOCK.DEMO.VIEWER_PROFILES",
+      "domain": "Table",
+      "access_count": 843,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 561,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.SAP_MATERIALS",
+      "domain": "Table",
+      "access_count": 514,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-01"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 404,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-01"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.ACTION_LOG",
+      "domain": "Table",
+      "access_count": 381,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-01"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.CARRIERS",
+      "domain": "Table",
+      "access_count": 281,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-01"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.SAP_VENDORS",
+      "domain": "Table",
+      "access_count": 277,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-01"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.MARA",
+      "domain": "Table",
+      "access_count": 242,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.SAP_PURCHASE_ORDERS",
+      "domain": "Table",
+      "access_count": 223,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-01"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.SIMULATION_LOG",
+      "domain": "Table",
+      "access_count": 200,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-01"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.ACTION_TYPES",
+      "domain": "Table",
+      "access_count": 171,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-01"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.EKPO",
+      "domain": "Table",
+      "access_count": 171,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "SCIPLAY_ML_DEMO.RAW_DATA.GAMING_DAILY_AGGREGATIONS",
+      "domain": "Table",
+      "access_count": 159,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "SCIPLAY_ML_DEMO.RAW_DATA.GAME_METADATA",
+      "domain": "Table",
+      "access_count": 159,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "SCIPLAY_ML_DEMO.RAW_DATA.PLAYER_PROFILES",
+      "domain": "Table",
+      "access_count": 159,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_STOCK.ONTOLOGY_KG.V_COMPANY",
+      "domain": "View",
+      "access_count": 158,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.STPO",
+      "domain": "Table",
+      "access_count": 141,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.QUAL_MATRIX",
+      "domain": "Table",
+      "access_count": 138,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-05"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.PLANTS",
+      "domain": "Table",
+      "access_count": 127,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-30"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.LFA1",
+      "domain": "Table",
+      "access_count": 107,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.VBAP",
+      "domain": "Table",
+      "access_count": 97,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.ARIBA_SUPPLIERS",
+      "domain": "Table",
+      "access_count": 80,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_STOCK.ONTOLOGY_KG.V_EXCHANGE",
+      "domain": "View",
+      "access_count": 75,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_STOCK.ONTOLOGY_KG.KG_EDGE",
+      "domain": "Table",
+      "access_count": 68,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_STOCK.ONTOLOGY_KG.V_HAS_SECURITY",
+      "domain": "View",
+      "access_count": 66,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_STOCK.ONTOLOGY_KG.V_LISTED_ON",
+      "domain": "View",
+      "access_count": 66,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "SNOWFLAKE.ACCOUNT_USAGE.QUERY_HISTORY$V34",
+      "domain": "View",
+      "access_count": 62,
+      "distinct_users": 2,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "SECURITY_GOVERNANCE_PRIVATE_LISTING.DATA.PROCEDURE_CODES_T",
+      "domain": "Table",
+      "access_count": 60,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "SECURITY_GOVERNANCE_PRIVATE_LISTING.DATA.IP_LIST_T",
+      "domain": "Table",
+      "access_count": 60,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_STOCK.ONTOLOGY_KG.V_DOW30COMPONENT",
+      "domain": "View",
+      "access_count": 60,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_STOCK.ONTOLOGY_KG.V_SECURITY",
+      "domain": "View",
+      "access_count": 54,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.BILL_OF_MATERIALS",
+      "domain": "Table",
+      "access_count": 54,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-25"
+    },
+    {
+      "fqn": "E2E_SNOW_MLOPS_DB.MLOPS_SCHEMA.MORTGAGE_LENDING_DEMO_DATA",
+      "domain": "Table",
+      "access_count": 53,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_STOCK.ONTOLOGY_KG.V_RELATED_TO",
+      "domain": "View",
+      "access_count": 46,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_MERKLE_WORKSHOP.RAW.CLIENT_CAMPAIGNS",
+      "domain": "Table",
+      "access_count": 45,
+      "distinct_users": 2,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.COEP",
+      "domain": "Table",
+      "access_count": 43,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_STOCK.ONTOLOGY_KG.V_IS_DOW30_MEMBER",
+      "domain": "View",
+      "access_count": 42,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.CONTRACTS",
+      "domain": "Table",
+      "access_count": 41,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-25"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.LIKP",
+      "domain": "Table",
+      "access_count": 38,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.BSEG",
+      "domain": "Table",
+      "access_count": 36,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_STOCK.ONTOLOGY_KG.V_SECTOR",
+      "domain": "View",
+      "access_count": 30,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.QALS",
+      "domain": "Table",
+      "access_count": 27,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_STOCK.CURATED.COMPANIES",
+      "domain": "Table",
+      "access_count": 26,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.INSPECTIONS",
+      "domain": "Table",
+      "access_count": 25,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-25"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.KG_EDGE",
+      "domain": "Table",
+      "access_count": 23,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-23"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.KG_NODE",
+      "domain": "Table",
+      "access_count": 22,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-23"
+    },
+    {
+      "fqn": "DB_STOCK.ONTOLOGY_KG.VW_ONT_ALL_ENTITIES",
+      "domain": "View",
+      "access_count": 21,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.INFORMATION_SCHEMA.COLUMNS",
+      "domain": "View",
+      "access_count": 18,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_STOCK.ONTOLOGY_KG.REL_EDGE_INFERRED",
+      "domain": "Table",
+      "access_count": 18,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.V_SUPPLIER",
+      "domain": "View",
+      "access_count": 18,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.CURATED.PURCHASE_ORDERS",
+      "domain": "Table",
+      "access_count": 17,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_STOCK.CURATED.SECURITIES",
+      "domain": "Table",
+      "access_count": 17,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.V_MATERIAL",
+      "domain": "View",
+      "access_count": 15,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.LFA2",
+      "domain": "Table",
+      "access_count": 15,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.V_SUPPLIES",
+      "domain": "View",
+      "access_count": 15,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.CURATED.SUPPLIERS",
+      "domain": "Table",
+      "access_count": 15,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_STOCK.CURATED.COMPANY_RELATIONSHIPS",
+      "domain": "Table",
+      "access_count": 14,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.INFORMATION_SCHEMA.TABLES",
+      "domain": "View",
+      "access_count": 14,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.CURATED.MATERIALS",
+      "domain": "Table",
+      "access_count": 12,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_STOCK.INFORMATION_SCHEMA.COLUMNS",
+      "domain": "View",
+      "access_count": 12,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.CURATED.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 11,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.LFB1",
+      "domain": "Table",
+      "access_count": 11,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.V_CARRIES",
+      "domain": "View",
+      "access_count": 10,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "SNOWFLAKE.ACCOUNT_USAGE.SNOWFLAKE_INTELLIGENCE_USAGE_HISTORY$V13",
+      "domain": "View",
+      "access_count": 9,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-05"
+    },
+    {
+      "fqn": "DB_STOCK.ONTOLOGY_KG.ONT_CLASS",
+      "domain": "Table",
+      "access_count": 9,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_STOCK.ONTOLOGY_KG.ONT_RELATION_DEF",
+      "domain": "Table",
+      "access_count": 9,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_MERKLE_WORKSHOP.RAW.SAMPLE_EVAL",
+      "domain": "Table",
+      "access_count": 9,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "SNOWFLAKE.ACCOUNT_USAGE.CORTEX_AGENT_USAGE_HISTORY$V13",
+      "domain": "View",
+      "access_count": 9,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-05"
+    },
+    {
+      "fqn": "DB_MERKLE_WORKSHOP.RAW.AUDIENCE_SEGMENTS",
+      "domain": "Table",
+      "access_count": 8,
+      "distinct_users": 2,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.V_SHIPMENT",
+      "domain": "View",
+      "access_count": 8,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.KONV",
+      "domain": "Table",
+      "access_count": 8,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.DNB_RISK_ASSESSMENTS",
+      "domain": "Table",
+      "access_count": 6,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.ENTITY_CROSSWALK",
+      "domain": "Table",
+      "access_count": 6,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.CURATED.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 5,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.V_WAREHOUSE",
+      "domain": "View",
+      "access_count": 5,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.REL_RESOLVED",
+      "domain": "View",
+      "access_count": 5,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_STOCK.CURATED.EXCHANGES",
+      "domain": "Table",
+      "access_count": 5,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.V_PLANT",
+      "domain": "View",
+      "access_count": 5,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.CURATED.PLANTS",
+      "domain": "Table",
+      "access_count": 5,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.INCIDENT_LOG",
+      "domain": "Table",
+      "access_count": 5,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.V_LOCATED_IN",
+      "domain": "View",
+      "access_count": 5,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.MATERIAL_CATEGORY_MAP",
+      "domain": "Table",
+      "access_count": 4,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.ONT_RELATION_DEF",
+      "domain": "Table",
+      "access_count": 4,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.CURATED.INSPECTIONS",
+      "domain": "Table",
+      "access_count": 4,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_STOCK.CURATED.DOW30_COMPONENTS",
+      "domain": "Table",
+      "access_count": 4,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.CURATED.CONTRACTS",
+      "domain": "Table",
+      "access_count": 4,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.V_STORED_AT",
+      "domain": "View",
+      "access_count": 4,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.VW_ONT_ORGANIZATION",
+      "domain": "View",
+      "access_count": 4,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_MERKLE_WORKSHOP.ANALYTICS.CAMPAIGN_EVAL_DATASET",
+      "domain": "Table",
+      "access_count": 4,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-18"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.ONT_CLASS",
+      "domain": "Table",
+      "access_count": 4,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.V_PURCHASE_ORDER",
+      "domain": "View",
+      "access_count": 4,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_STOCK.INFORMATION_SCHEMA.TABLES",
+      "domain": "View",
+      "access_count": 4,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.VW_ONT_TRANSACTION",
+      "domain": "View",
+      "access_count": 4,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.SAP_VENDOR_MAPPING",
+      "domain": "Table",
+      "access_count": 4,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.T001W",
+      "domain": "Table",
+      "access_count": 4,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.VW_ONT_ASSET",
+      "domain": "View",
+      "access_count": 4,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.RAW_SOURCES.MATERIAL_CATEGORIES",
+      "domain": "Table",
+      "access_count": 4,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.VW_ONT_LOCATION",
+      "domain": "View",
+      "access_count": 4,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_FE71.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_945A.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_D055.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.CURATED.CARRIERS",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_75DB.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_STOCK.ONTOLOGY_KG.KG_NODE",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_2064.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_94DE.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_9004.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_6CCE.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260930_4C8E.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-30"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_A78E.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260930_5FE9.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-30"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260930_F330.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-30"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_8EC3.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_3FFE.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260930_D462.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-30"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.T320",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_60E3.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260930_F75D.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-30"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_8850.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 3,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260930_F330.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-30"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.CURATED.RISK_SCORES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260930_F75D.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-30"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_D055.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_60E3.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_91AE.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_63F4.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.CANONICAL_IDENTITY",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_87AA.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_8EC3.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_FBCE.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.V_BOUND_BY",
+      "domain": "View",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-05"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260930_5FE9.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-30"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260930_4C8E.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-30"
+    },
+    {
+      "fqn": "DB_MERKLE_WORKSHOP.RAW.CHANNEL_METRICS",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_CB80.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_8E4C.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_8E4C.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.DEMAND_FORECAST",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_75DB.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_789C.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.V_CONTRACT",
+      "domain": "View",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-05"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_8850.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260930_D462.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-30"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260930_A2B8.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-30"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_EC13.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_2D03.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_STOCK.CURATED.SECTORS",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_6CCE.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DEMO_CUSTOM.NBCU.TV_RATINGS",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-10"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.KNOWLEDGE_BASE_DOCS",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_9004.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_945A.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_FBCE.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_5505.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260930_643C.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-30"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_3FFE.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_EC13.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_2D03.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_2EF1.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SAP_PRODUCTION.DNB_RISK_ASSESSMENTS",
+      "domain": "View",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-06"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_94DE.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_91AE.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_789C.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_CB80.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_87AA.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_A78E.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_2064.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_2EF1.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_FE71.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 2,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_12DF.SAP_PURCHASE_ORDERS",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_3FFE.SAP_PURCHASE_ORDERS",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260930_F75D.SAP_PURCHASE_ORDERS",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-30"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_5505.SAP_PURCHASE_ORDERS",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260930_643C.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-30"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_2D03.SAP_PURCHASE_ORDERS",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.V_INSPECTION",
+      "domain": "View",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_945A.SAP_PURCHASE_ORDERS",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_STOCK.ONTOLOGY_KG.ONT_RULE",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "KNOWLEDGE_GRAPH_DB.SOCCER_KG.V_PLAYS_FOR",
+      "domain": "View",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-10-05"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_63F4.SAP_PURCHASE_ORDERS",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.V_EVALUATES",
+      "domain": "View",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_MERKLE_WORKSHOP.INFORMATION_SCHEMA.TABLES",
+      "domain": "View",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-18"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_58CC.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_63F4.WAREHOUSES",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_76E8.SHIPMENTS",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_87AA.SAP_PURCHASE_ORDERS",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_75DB.SAP_PURCHASE_ORDERS",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260930_F330.SAP_PURCHASE_ORDERS",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-30"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SUPPLY_CHAIN.V_CARRIER",
+      "domain": "View",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-21"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_76E8.SAP_PURCHASE_ORDERS",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_2EF1.SAP_PURCHASE_ORDERS",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_EC13.SAP_PURCHASE_ORDERS",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_9004.SAP_PURCHASE_ORDERS",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260924_12DF.SAP_VENDORS",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-24"
+    },
+    {
+      "fqn": "DB_ONTOLOGY_CONTROL_PLANE.SIM_20260930_643C.SAP_PURCHASE_ORDERS",
+      "domain": "Table",
+      "access_count": 1,
+      "distinct_users": 1,
+      "last_accessed": "2026-09-30"
+    }
+  ],
+  "hot_streamlits": [],
+  "hot_svs": []
+}

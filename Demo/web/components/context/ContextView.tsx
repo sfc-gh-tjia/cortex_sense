@@ -11,7 +11,7 @@ function FileViewer({ fileKey, onClose }: { fileKey: string; onClose: () => void
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:5001/api/file/${fileKey}`)
+    fetch(`/api/file/${fileKey}`)
       .then((r) => r.json())
       .then((data) => {
         setContent(data.content || data.error || "Empty");
